@@ -1,0 +1,20 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
+   <feGaussianBlur stdDeviation="3.1" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_7_blur">
+   <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
+  </filter>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_8_blur">
+   <feGaussianBlur stdDeviation="3.7" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect filter="url(#svg_1_blur)" rx="12" id="svg_1" height="212.99999" width="344.99999" y="205.66667" x="236.33333" stroke="#000" fill="#b21e83"/>
+  <path stroke="#000" style="vector-effect: non-scaling-stroke;" id="svg_6" d="m387.88667,342.28523l2,14l-2,-14z" stroke-width="0" fill="#581266"/>
+  <path transform="rotate(-180 410.679 226.792)" stroke="#000" filter="url(#svg_7_blur)" id="svg_7" d="m337.67915,226.5227l73,-111.73119l73,111.73119l-36.5,0l0,112.26882l-73,0l0,-112.26882l-36.5,0z" stroke-width="0" fill="#581266"/>
+  <text filter="url(#svg_8_blur)" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Roboto Slab'" font-size="66" id="svg_8" y="387.66667" x="346.33332" stroke-width="0" stroke="#000" fill="#000000">PDF</text>
+ </g>
+</svg>
