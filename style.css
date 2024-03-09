@@ -20,6 +20,7 @@ body{
         min-width: 100px;
         max-height: 40vh;
         max-width: 40vw;
+        pointer-events:none;
     }
 }
 h3{
