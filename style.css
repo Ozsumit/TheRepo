@@ -424,6 +424,11 @@ html{
            background-size: cover;
    
        }
+       .idontframepdf{
+        width: 80vw;
+        border-radius: 1rem;
+        border: 2px solid #ffbf00;
+    }
        .reposec{
            padding: 3%;
        }#bckdor{
