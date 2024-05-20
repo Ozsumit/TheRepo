@@ -217,8 +217,9 @@ html{
             display:flex ;
             flex-direction: row;
             gap: 1rem;
+            height: 14rem;
         justify-content: center;
-        align-items: center;color: #ffffff;
+        align-items: start;color: #ffffff;
         text-decoration: none;margin-top: 1srem;
         a{
             display:flex ;
