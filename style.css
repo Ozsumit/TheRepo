@@ -123,6 +123,9 @@ html{
            height: 1rem;
            /* box-shadow: 1px 1px 12px #ffbf005e; */
            box-shadow:  0 0 12px #ffbf0081;
+           a{
+            color: #f7ff5cef;
+           }
        }
        .items{
            background-color: #00000089;
