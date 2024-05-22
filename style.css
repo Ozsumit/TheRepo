@@ -505,6 +505,22 @@ html{
        display: none;
    }
    .idontframepdf{
-       border-radius: 1rem;
+    flex-direction: column;
+    display: flex;
+    cursor: pointer;
+  
+    
+      margin-bottom: 1%;
+   
+        border-radius: 1rem;
        border: 2px solid #ffbf00;
+       border-bottom: 13px solid #ffbf00;
+       border-bottom-left-radius: 1rem;
+       border-bottom-right-radius:1rem ;
+       border-start-end-radius: 1rem;
+       
+   }
+   .content{
+    flex-direction: column;
+    display: flex;
    }
