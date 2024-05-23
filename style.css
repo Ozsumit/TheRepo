@@ -1,6 +1,8 @@
 
 html{
     scrollbar-width:none;   
+    
+
    }
        body{
        background-attachment: fixed;
@@ -13,7 +15,11 @@ html{
        flex-direction: column;
        align-items: center;
        justify-content: center;
-       align-items: center;
+       cursor: url('icons/pointer.cur'       ),auto;
+      
+       a{
+         cursor:url('icons/link.cur'),link;
+       }
    }
    #main{
        margin-bottom: 5rem;

@@ -83,11 +83,13 @@
     <input type="text" name="backdoor" id="bckdor" value=" " placeholder="Say my name." onclick="saymyname()">
     <a href="#Dev">
         <button id="HIDDEV" disabled="" onclick="show()">Reveal</button></a>
+        <h3 id="warn" style="display: none;">You gotta put the right code man</h3>
       </div>
     </div>
 <div id="Dev" class="reposecDev" style="display: none;">
      
-  <div class="items" ><a href="files/Sumit.java.pdf.docx" download="">Mypdf    </a></div>
+  <div class="items" ><a href="files/Sumit.java.pdf.docx
+    " download="">Mypdf    </a></div>
    <div class="txt">
         Congrats you are one of the real ones. If you make it this far you are up for some good times.
         First four are the boring stuff. After that is the real fun...
@@ -131,6 +133,7 @@ const inputBox = document.getElementById("bckdor");
 const revealButton = document.getElementById("HIDDEV");
 const getElementById = "Vasu";
 function show(){
+  
     var x = document.getElementById("Dev");
   if (x.style.display === "none") {
     x.style.display = "grid";
@@ -140,26 +143,36 @@ function show(){
 } 
 document.getElementById("Dev").style.display = "none";
    document.getElementById("bckdor").value="";
-inputBox.addEventListener("keyup", function() {
+inputBox.addEventListener('keyup', function hello() {
   if (inputBox.value === getElementById) {
     revealButton.disabled = false; 
     revealButton.style.pointerEvents="all";
     document.getElementById("saymyname").style.display="none";
     document.getElementById("urgdmrght").style.display="block";
     document.getElementById("play2").play();
+    
   
   } else {
     revealButton.disabled = true;
     document.getElementById("Dev").style.display = "none";
     document.getElementById("saymyname").style.display="block";
     document.getElementById("urgdmrght").style.display="none";
+    stubborn()
     
   }
 });
 function saymyname(){
   document.getElementById("play").play();
+  
+  
 }
 
+document.getElementById("bckdor").addEventListener('keypress',function (e){
+  if (e.key === 'Enter') {
+   show() // code for enter
+  }
+  
+})
 </script>
 
 </body>
