@@ -525,7 +525,7 @@ input:focus::placeholder {
         position: sticky;
         
  
-        top: 92vh;
+        top: 92svh;
     
         gap: 4rem;
         font-size: 5rem;
