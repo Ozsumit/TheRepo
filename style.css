@@ -522,7 +522,7 @@ input:focus::placeholder {
 
     .nav {
         z-index: 100;
-        position: fixed;
+        position: sticky;
         
  
         top: 92vh;
