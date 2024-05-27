@@ -41,12 +41,13 @@
         </div>
     </div>
 
-
     <h3 id="topic" style="color: #ffbf00;font-size: 1.7rem;">Class-10</h3>
+<button onclick="showmenu()" class="submenubtn" id="smenubtn">Sub.Menu</button>
+
     <div id="par" class="reposec" style="margin-bottom: 5rem;">
         <div class="items" id="###" href="#container"  onclick="show('contentNepali')"><a href="#container">Nepali</a></div>
         <div class="items" id="###" href="#container" onclick="show('contentDbms')"><a href="#container">Dbms</a></div>
-        <div class="items" id="###" href="#container" onclick="show('contentEnglish')" style="pointer-events: none;"><a style="color: grey;" href="#container">C-Net</a></div>
+        <div class="items" id="###" href="#container" onclick="show('contentoop')" style="pointer-events: all"><a href="#container">OOP</a></div>
         <div class="items" id="###" href="#container" onclick="show('contentcnet')"style="pointer-events: none;"><a style="color: grey;" href="#container">English</a></div>
 
 
@@ -152,8 +153,8 @@
            <div id="contentDbms" class="content" style="display: none;"> <div class="reposec2" style="margin-bottom: 5rem; ">
             <div class="items" id="###" href="#DBMSpaths" onclick="show3('Dl1')"><a href="#Nepalipaths">Unit-1(Introduction to DBMS...</a></div>
             <div class="items" id="###" href="#DBMSpaths" onclick="show3('Dl2')"><a href="#Nepalipaths">Unit-2( Entity relationship model )</a></div>
-            <div class="items" id="###" href="#DBMSpaths" onclick="show3('Dl3')" style="pointer-events: none;"><a style="color: grey;"  href="#Nepalipaths">Unit-3( Coming Soon )</a></div>
-            <div class="items" id="###" href="#DBMSpaths" onclick="show3('Dl4')" style="pointer-events: none;"><a style="color: grey;"  href="#Nepalipaths">Unit-4( Coming Soon )</a></div>
+            <div class="items" id="###" href="#DBMSpaths" onclick="show3('Dl3')"><a  href="#Nepalipaths">Unit-3( SQL )</a></div>
+            <div class="items" id="###" href="#DBMSpaths" onclick="show3('Dl4')"><a  href="#Nepalipaths">Unit-4( Database Design )</a></div>
             <div class="items" id="###" href="#DBMSpaths" onclick="show3('Dl5')" style="pointer-events: none;"><a  style="color: grey;" href="#Nepalipaths">Unit-5( Coming Soon )</a></div>
              <div class="items" id="###" href="#DBMSpaths" onclick="show3('Dl6')" style="pointer-events: none;"><a style="color: grey;"  href="#Nepalipaths">Unit-6( Coming Soon )</a></div>
 
@@ -163,8 +164,8 @@
             <div class="lessonsNep" style="display: flex; flex-direction: row;justify-content: center;align-items: center;">
                 <div id="Dl1" class="content" style="display: none;" > <iframe  onclick="requestFullscreen()"   id="ifr1" class="idontframepdf" src="https://drive.google.com/file/d/1QU-VaWXieh87FTl6L4IT4lnRKjtShlb3/preview" frameborder="0"  allowfullscreen loading="lazy" width="640" height="480" allow="autoplay" ></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
                 <div id="Dl2" class="content" style="display: none;"> <iframe  onclick="requestFullscreen()"   class="idontframepdf" src="https://drive.google.com/file/d/1js4TnHdBednI4xrT72J4YSe59Ab7pzVf/preview" loading="lazy" width="650" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
-                <div id="Dl3" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="https://drive.google.com/file/d/1WYSRwc5U01ywQeRUQRnqlDT2vWc2AxYd/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
-                <div id="Dl4" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="https://drive.google.com/file/d/1So0LU5iseStVU3OXqV2WAokLYVQ_S19L/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+                <div id="Dl3" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="https://drive.google.com/file/d/1UVPe7phWPIhJJefkVxs49SCd0mIk3eKC/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+                <div id="Dl4" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="https://drive.google.com/file/d/1k6L9n_2JmAHvURO43qLkXGrQ9Hw1mnwI/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
                 <div id="Dl5" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="https://drive.google.com/file/d/1iDFuYVKyt5CIUlQ8rc4fOPLfnPedQHkP/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
                 
                 </div>
@@ -189,17 +190,47 @@
         
         
         
-        <div id="contentEnglish" class="content" style="display: none;"> <iframe class="idontframepdf"
-                    src="https://drive.google.com/file/d/1EAM9NLC1vF5q2NkC0WtmcatfyTDINbE7/preview" width="640"
-                    height="480" allow="autoplay"></iframe></div>
+<div id="contentoop" class="content" style="display: none;"> <div class="reposec2" style="margin-bottom: 5rem; ">
+    <div class="items" id="###" href="#OOPpaths" onclick="showoop('OOPl1')"><a href="#Nepalipaths">Unit-1(Introduction to OOP)</a></div>
+    <div class="items" id="###" href="#OOPpaths" onclick="showoop('OOPl2')"style="pointer-events: none;"><a  style="color: grey;" href="#Nepalipaths">Unit-2( Coming Soon )</a></div>
+    <div class="items" id="###" href="#OOPpaths" onclick="showoop('OOPl3')"style="pointer-events: none;"><a  style="color: grey;"  href="#Nepalipaths">Unit-3( Coming Soon )</a></div>
+    <div class="items" id="###" href="#OOPpaths" onclick="showoop('OOPl4')"style="pointer-events: none;"><a   style="color: grey;" href="#Nepalipaths">Unit-4( Coming Soon )</a></div>
+    <div class="items" id="###" href="#OOPpaths" onclick="showoop('OOPl5')" style="pointer-events: none;"><a  style="color: grey;" href="#Nepalipaths">Unit-5( Coming Soon )</a></div>
+     <div class="items" id="###" href="#OOPpaths" onclick="showoop('OOPl6')" style="pointer-events: none;"><a style="color: grey;"  href="#Nepalipaths">Unit-6( Coming Soon )</a></div>
+
+
+</div>
+<div id="OOPpaths">
+    <div class="lessonsNep" style="display: flex; flex-direction: row;justify-content: center;align-items: center;">
+        <div id="OOPl1" class="content" style="display: none;" > <iframe  onclick="requestFullscreen()"   id="ifr1" class="idontframepdf" src="https://drive.google.com/file/d/1Zu8AmqXZtwHmNcn-eR1OEKZFQGlN_qcP/preview" frameborder="0"  allowfullscreen loading="lazy" width="640" height="480" allow="autoplay" ></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+        <div id="OOPl2" class="content" style="display: none;"> <iframe  onclick="requestFullscreen()"   class="idontframepdf" src="#https://drive.google.com/file/d/1js4TnHdBednI4xrT72J4YSe59Ab7pzVf/preview" loading="lazy" width="650" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+        <div id="OOPl3" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="#https://drive.google.com/file/d/1UVPe7phWPIhJJefkVxs49SCd0mIk3eKC/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+        <div id="OOPl4" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="#https://drive.google.com/file/d/1k6L9n_2JmAHvURO43qLkXGrQ9Hw1mnwI/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+        <div id="OOPl5" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="#https://drive.google.com/file/d/1iDFuYVKyt5CIUlQ8rc4fOPLfnPedQHkP/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+        
+        </div>
+</div>
+</div>
+
+
+
+</div>  
             <div id="contentcnet" class="content" style="display: none;"><iframe class="idontframepdf"
                     src="https://drive.google.com/file/d/1j8xhqNczE97HCW1sDQr6H5Y1o-360juh/preview" width="640"
                     height="480" allow="autoplay"></iframe></div>
                 </div>
-    <h3 style="border: 2px solid red;border-radius: .5rem;padding: 1%;">Only Nepali subject is available at the moment. Other subject will be updated weekly.</h3>
+    <h3 style="border: 2px solid red;border-radius: .5rem;padding: 1%;">Updates on subjects are paused till June 10 2024. </h3>
   
 </body>
 <script>
+
+
+if( document.getElementById("par").style.display==='grid'){
+        
+    }
+   
+    
+
     function show(divId) {
         const contentDiv = document.getElementById(divId);
 
@@ -207,9 +238,11 @@
             contentDiv.style.display = 'flex';
             document.getElementById("par").style.display='none';
             document.getElementById("topic").innerHTML='Class-10/Nepali';
+            document.getElementById("smenubtn").style.display='block';
             hideOtherDivs(divId);
         } else {
             contentDiv.style.display = 'none';
+           
         }
 
     }
@@ -222,6 +255,7 @@
             }
         });
     }
+
 
 
 
@@ -270,6 +304,27 @@
         });
     }
 
+    function showoop(divId) {
+        const contentDiv = document.getElementById(divId);
+
+        if (contentDiv.style.display === 'none') {
+            contentDiv.style.display = 'flex';
+            hideOtherDiv4(divId);
+        } else {
+            contentDiv.style.display = 'none';
+        }
+
+    }
+    
+    content
+    function hideOtherDiv4(currentDivId) {
+        const allDivs = document.querySelectorAll('[id^="OOPl"]');
+        allDivs.forEach(div => {
+            if (div.id !== currentDivId) {
+                div.style.display = 'none';
+            }
+        });
+    }
 
     function requestFullScreen(id) {
     // Supports most browsers and their versions.
@@ -283,6 +338,22 @@
             wscript.SendKeys("{F11}");
         }
     }
+}
+function showmenu(){
+    if ( document.getElementById("par").style.display === 'none') {
+        document.getElementById("par").style.display = 'grid';
+        document.getElementById("smenubtn").style.display='block';
+        document.getElementById("smenubtn").style.width='2rem'; 
+        document.getElementById("smenubtn").innerHTML='❌';
+        // document.getElementById("smenubtn").style. background='#00f7d2';
+        // document.getElementById("smenubtn").style.  border='2px solid #fff';
+        } else {
+            document.getElementById("par").style.display = 'none';
+            document.getElementById("smenubtn").style.display='block';
+            document.getElementById("smenubtn").innerHTML='Sub.Menu';
+            document.getElementById("smenubtn").style.width='4.5rem'; 
+        }
+
 }
 
 var elem = document.body; // Make the body go full screen.
