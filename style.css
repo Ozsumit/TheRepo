@@ -142,6 +142,11 @@ h3 {
         border: 2px solid #ffbf00;
         align-items: center;
         justify-content: center;
+        
+        overflow: visible;
+        text-overflow: clip;
+        
+        justify-content: space-around;
         height: 1rem;
         /* box-shadow: 1px 1px 12px #ffbf005e; */
         box-shadow: 0 0 12px #ffbf0081;
@@ -464,23 +469,22 @@ input:focus::placeholder {
 }
 
 .submenubtn{
-    width: 4.5rem;
-    height: 1.8rem;
+    
+    height: 2rem;
     background: hsl(171, 80%, 18%);
     backdrop-filter: blur(5px);
     color: #131313;
     border: 2px solid rgba(255, 255, 255, 0);
     font-family: "Gemunu Libre", sans-serif;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: 1.6rem;
     display: none;
+    align-items: center;
+    justify-content: center;
     border-radius: .3rem;
     margin-bottom: 2rem;
     transition: all .2s linear;
-    -webkit-border-radius: .3rem;
-    -moz-border-radius: .3rem;
-    -ms-border-radius: .3rem;
-    -o-border-radius: .3rem;
+  
 }
 .submenubtn:hover {
     background: #00f7d2;
@@ -599,9 +603,26 @@ input:focus::placeholder {
         border-bottom: 2rem solid #ffbf00;
     }
 
-    .reposec {
+   
+    .reposecDev,
+    .reposec2 {
         padding: 3%;
-    }
+        .items:hover{
+          
+                overflow: visible;
+            text-overflow: clip;
+            
+            justify-content: safe;
+            }
+        .items{
+            overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        justify-content: space-around;
+        }
+        }
+        
+    
 
     #bckdor {
 
@@ -629,7 +650,7 @@ input:focus::placeholder {
         position: fixed;
         
  
-        top: 91vh;
+        top: 93vh;
     
         gap: 4rem;
         font-size: 5rem;
@@ -664,4 +685,5 @@ a{
             
         }
     }
+    
 }

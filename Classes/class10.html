@@ -42,8 +42,8 @@
     </div>
 
     <h3 id="topic" style="color: #ffbf00;font-size: 1.7rem;">Class-10</h3>
-<button onclick="showmenu()" class="submenubtn" id="smenubtn">Sub.Menu</button>
-
+<button onclick="showmenu()" class="submenubtn" id="smenubtn" style="font-size: 1.6rem;">⊨</button>
+<div class="mainsystemsub" style="display: block;flex-direction: column;align-items: center;justify-content: center;">
     <div id="par" class="reposec" style="margin-bottom: 5rem;">
         <div class="items" id="###" href="#container"  onclick="show('contentNepali')"><a href="#container">Nepali</a></div>
         <div class="items" id="###" href="#container" onclick="show('contentDbms')"><a href="#container">Dbms</a></div>
@@ -219,8 +219,8 @@
                     src="https://drive.google.com/file/d/1j8xhqNczE97HCW1sDQr6H5Y1o-360juh/preview" width="640"
                     height="480" allow="autoplay"></iframe></div>
                 </div>
-    <h3 style="border: 2px solid red;border-radius: .5rem;padding: 1%;">Updates on subjects are paused till June 10 2024. </h3>
-  
+    <h3 style="border: 2px solid red;border-radius: .5rem;padding: 1%;margin-bottom: 5rem;">Updates on subjects are paused till June 10 2024. </h3>
+</div>
 </body>
 <script>
 
@@ -238,7 +238,7 @@ if( document.getElementById("par").style.display==='grid'){
             contentDiv.style.display = 'flex';
             document.getElementById("par").style.display='none';
             document.getElementById("topic").innerHTML='Class-10/Nepali';
-            document.getElementById("smenubtn").style.display='block';
+            document.getElementById("smenubtn").style.display='flex';
             hideOtherDivs(divId);
         } else {
             contentDiv.style.display = 'none';
@@ -342,16 +342,17 @@ if( document.getElementById("par").style.display==='grid'){
 function showmenu(){
     if ( document.getElementById("par").style.display === 'none') {
         document.getElementById("par").style.display = 'grid';
-        document.getElementById("smenubtn").style.display='block';
-        document.getElementById("smenubtn").style.width='2rem'; 
-        document.getElementById("smenubtn").innerHTML='❌';
-        // document.getElementById("smenubtn").style. background='#00f7d2';
+             document.getElementById("smenubtn").style.display='flex';
+            document.getElementById("smenubtn").innerHTML='⊭';
+            document.getElementById("smenubtn").style.width='2rem'; 
+            document.getElementById("smenubtn").style.fontSize='1.6rem';
         // document.getElementById("smenubtn").style.  border='2px solid #fff';
         } else {
             document.getElementById("par").style.display = 'none';
-            document.getElementById("smenubtn").style.display='block';
-            document.getElementById("smenubtn").innerHTML='Sub.Menu';
-            document.getElementById("smenubtn").style.width='4.5rem'; 
+            document.getElementById("smenubtn").style.display='flex';
+            document.getElementById("smenubtn").innerHTML='⊨';
+            document.getElementById("smenubtn").style.width='2rem'; 
+            document.getElementById("smenubtn").style.fontSize='1.6rem'; 
         }
 
 }
