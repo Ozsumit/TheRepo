@@ -13,11 +13,14 @@
 <link rel="preload" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&amp;display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="14990782f626308686.svg">
+<link rel="icon" type="image/x-icon" href="icons/Frame 2.svg">
     <title>Repository</title>
     
 </head>
 <script>
+  function closepopop(){
+  document.getElementById("popopo").style.display="none";
+}
  function alertas(){
   alert(" At the moment, We only support few Class-10 and Class-11 subjects. We are working on expanding even further. We Apolozize for any Inconveniences caused."
     
@@ -30,7 +33,7 @@
   
     <div class="navigation" >
       <h1 class="logoxdc" >
-           The Repo
+           <img src="icons/Frame 2 (1).svg" alt="" style= " height: 3rem; width:5rem;">
          </h1>
          <div class="nav">
           
@@ -78,7 +81,15 @@
 
 
 
-        <h4><a href="https://Sumit.info.np">Contact me to request updates</a></h4>
+        
+
+        <div class="popup" id="popopo" >
+          <div class="filter">
+          <h3>This page is currently being redesigned. Some minor changes and design inconsistencies may occur for upcoming weeks.</h3>
+          <button class="closepopup" id="clspop" onclick="closepopop()" >Ok</button>
+        </div>
+        </div>
+
 
 <div id="GuessingGame">
 
@@ -110,6 +121,9 @@
 
 
 
+
+
+
 <audio id="play">
   <source src="Voicy_Say my name.mp3" type="audio/mp3">
 </audio>
@@ -121,7 +135,7 @@
   <source src="Voicy_You are god damn right.mp3" type="audio/mp3">
 </audio>
 <h1 style="font-family: Gemunu Libre, sans-serif;font-size: 2.6rem;color: #00f700;margin: 0;margin-bottom: 1rem;text-shadow: 0px 0px 43px #ffffffb3;">
-      The Repo
+  <img src="icons/Frame 1 (1).svg" alt="" srcset=""style= " height: 5rem; width:8rem;">
     </h1>
 <h3   style="font-size: 1.3rem;margin-bottom: 9vh; color: #ffffff;border: 2px double #ff0000d2;padding: 1%;border-radius: .5rem;">
   At the moment, We only support few Class-10 and Class-11 subjects. We are working on expanding even further. We Apolozize for any Inconveniences caused.
@@ -182,6 +196,17 @@ document.getElementById("bckdor").addEventListener('keypress',function (e){
   }
   
 })
+
+
+
+setTimeout(sa,2000);
+function sa(){
+ document.getElementById("popopo").style.display="flex";
+}
+
+
+
+
 </script>
 
 </body>
