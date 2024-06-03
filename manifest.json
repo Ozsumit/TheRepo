@@ -1,0 +1,17 @@
+{
+    "name": "Repo Lighthouse",
+    "short_name" : "Repo",
+    "start_url": "index.html?utm_source=homescreen",
+    "scope" : "./",
+    "icons": [
+        {
+            "src": "14990782f626308686.svg",
+            "sizes": "192x192",
+            "type": "image/svg"
+        }
+      
+    ],
+    "theme_color": "#ffee00",
+    "background_color": "#050607",
+    "display": "standalone"
+ }
