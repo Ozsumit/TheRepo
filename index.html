@@ -43,20 +43,20 @@
           <a href="#GuessingGame">Dev </a>
       </div>
   </div>
-     
+      <div id="main" style="display: flex; flex-direction: column; justify-content: center;align-items: center;backdrop-filter: blur(15px); border-radius: 1rem;width: 75vw;height: 100%;padding: 2%;padding-top: 0;margin-top: 3%;"> 
     <section id="Home">
-    <div id="main">   
+     
        <!-- <div class="logosec">
         <img src="14990782626308686(1).svg" alt="">
     </div> -->
    
-    <h3>The site where you can find notes,pdfs,cover page,assignment details and other necessary files
+    <!-- <h3>The site where you can find notes,pdfs,cover page,assignment details and other necessary files -->
       <br>
      
     </h3>
 
   </section>
-    
+ 
     <h3 style="color: #ffbf00;font-size: 1.7rem;">Classes</h3>
     <div class="reposec">
         <div class="items" id="WmadCOverpage" onclick="alertas()"><a href="###">Class-9(Coming Soon)</a></div>
@@ -79,8 +79,8 @@
          
         </div>
 
-
-
+      </div>
+      
         
 
         <div class="popup" id="popopo" >
@@ -91,18 +91,25 @@
         </div>
 
 
-<div id="GuessingGame">
+<div id="GuessingGame" style="border-radius: 1rem;background-color: #2a2b2cb3;width: 60vw;height: 100%;backdrop-filter: blur(15px);">
 
-<h4 class="txt">Enter the code word to reveal the hidden items.</h4>
-    <div id="brba"><img id="saymyname" src="waltwhite-breakingbad.gif" alt="">
-        <img id="urgdmrght" src="breaking-bad-walter-white.gif" style="display: none;" alt=""></div>
-    <input type="text" name="backdoor" id="bckdor" value=" " placeholder="Say my name." onclick="saymyname()">
-    <a href="#Dev">
-        <button id="HIDDEV" disabled="" onclick="show()">Reveal</button></a>
-        <h3 id="warn" style="display: none;">You gotta put the right code man</h3>
+<div class="sec1">
+  <h3></h3>
+</div>
+<div class="contsec" style="display: flex;flex-direction: column;justify-content: center;align-items: center;"><h4 class="txt">Enter the code word to reveal the hidden items.</h4>
+  <div id="brba"><img id="saymyname" src="waltwhite-breakingbad.gif" alt="">
+      <img id="urgdmrght" src="breaking-bad-walter-white.gif" style="display: none;" alt=""></div>
+  <input type="text" name="backdoor" id="bckdor" value=" " placeholder="Say my name." onclick="saymyname()">
+  <a href="#Dev">
+      <button id="HIDDEV" disabled="" onclick="show()">Reveal</button></a>
+      <h3 id="warn" style="display: none;">You gotta put the right code man</h3>
       </div>
-    </div>
-<div id="Dev" class="reposecDev" style="display: none;">
+<div class="sec2"></div>
+    
+    
+  
+
+</div><div id="Dev" class="reposecDev" style="display: none; margin-bottom: 0;margin-top: 3%;">
      
   <div class="items" ><a href="files/Sumit.java.pdf.docx
     " download="">Mypdf    </a></div>
@@ -118,7 +125,14 @@
     <div class="items" ><a href="Snapchat-618579574.jpg">Random photo    </a></div>
     
 </div>
-
+<div class="description">
+  <h3>
+    Welcome to The <span  style="color: #d9d9d9;" >R</span><span style="color: #d92617;" >E</span><span style="color: #d1d433;" >P</span><span style="color: #26d912;" >O</span>(Lighthouse edition),  Your go-to destination for comprehensive study materials and important questions. 
+    You’re not alone! Join our smart squad and ace those exams together.
+  </h3> <h3 onclick="port()" style="font-family: Mynerve, cursive;cursor: pointer;">
+      Vass.inc
+    </h3>
+</div>   
 
 
 
@@ -135,15 +149,12 @@
   <source src="Voicy_You are god damn right.mp3" type="audio/mp3">
 </audio>
 <h1 style="font-family: Gemunu Libre, sans-serif;font-size: 2.6rem;color: #00f700;margin: 0;margin-bottom: 1rem;text-shadow: 0px 0px 43px #ffffffb3;">
-  <img src="icons/Frame 1 (1).svg" alt="" srcset=""style= " height: 5rem; width:8rem;">
+ 
     </h1>
-<h3   style="font-size: 1.3rem;margin-bottom: 9vh; color: #ffffff;border: 2px double #ff0000d2;padding: 1%;border-radius: .5rem;">
-  At the moment, We only support few Class-10 and Class-11 subjects. We are working on expanding even further. We Apolozize for any Inconveniences caused.
 
-    </h3>
-    <h3 onclick="port()" style="font-family: Mynerve, cursive;">
-      Vass.inc
-    </h3>
+
+
+  </body>
 <script>
 
 
@@ -173,6 +184,7 @@ inputBox.addEventListener('keyup', function hello() {
     document.getElementById("saymyname").style.display="none";
     document.getElementById("urgdmrght").style.display="block";
     document.getElementById("play2").play();
+    document.getElementById("HIDDEV").style.color="#ffbf00";
     
   
   } else {
@@ -180,6 +192,7 @@ inputBox.addEventListener('keyup', function hello() {
     document.getElementById("Dev").style.display = "none";
     document.getElementById("saymyname").style.display="block";
     document.getElementById("urgdmrght").style.display="none";
+    
     stubborn()
     
   }
@@ -192,7 +205,9 @@ function saymyname(){
 
 document.getElementById("bckdor").addEventListener('keypress',function (e){
   if (e.key === 'Enter') {
-   show() // code for enter
+    if (inputBox.value === getElementById) {
+    show() 
+    }
   }
   
 })
@@ -209,4 +224,4 @@ function sa(){
 
 </script>
 
-</body>
+

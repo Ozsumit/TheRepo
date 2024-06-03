@@ -14,7 +14,7 @@ html {
 body {
     background-attachment: fixed;
     background: url(blir.svg);
-    background-color: #000;
+    background-color: #0B0C10;
     color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,13 +128,13 @@ h3 {
     grid-template-rows: minmax(1rem, AUTO);
     border-radius: 1rem;
     width: 70vw;
-    background-color: #2a2a2a8d;
+    background-color: #1d1f22d3;
     backdrop-filter: blur(5px);
     height: auto;
     padding: 2%;
 
     .items:hover {
-        background-color: #000000da;
+        background-color: #2A2B2C;
         backdrop-filter: blur(9px);
         border-radius: .5rem;
         padding: 1rem;
@@ -157,7 +157,7 @@ h3 {
     }
 
     .items {
-        background-color: #00000089;
+        background-color: #121217d4;
         backdrop-filter: blur(5px);
         border-radius: .5rem;
         padding: 1rem;
@@ -400,8 +400,8 @@ h4 {
     height: 1.5rem;
     border-radius: .7rem;
     padding: .5rem;
-    border: 3px solid #ffbf00;
-    box-shadow: 0px 0px 15px #ffbf0070;
+    border: 3px solid #9831a8;
+    box-shadow: 0px 0px 15px #d738efb9;
     background: #000000d7;
     backdrop-filter: blur(15px);
     color: #ffbf00;
@@ -435,8 +435,8 @@ input:focus::placeholder {
     width: 12rem;
     height: 11rem;
     margin-bottom: 2rem;
-    border: 3px solid #00f7d2;
-    box-shadow: 0 0 13px #00f7d2ad;
+    border: 3px solid #9831a8;
+    box-shadow: 0 0 13px #9831a8b9;
 
 
 
@@ -447,25 +447,30 @@ input:focus::placeholder {
 }
 
 #HIDDEV {
-    width: 4rem;
-    height: 2rem;
-    background: #ffbf00;
+    width: 5rem;
+    height: 2.5rem;
+    background: #050607;
     backdrop-filter: blur(5px);
-    color: #000000;
-    border: 2px solid rgba(255, 255, 255, 0);
+    color: #656565;
+    border: 2px solid #e5b35a;
     font-family: "Gemunu Libre", sans-serif;
     font-weight: bold;
     font-size: 1rem;
     pointer-events: none;
-    border-radius: .4rem;
+    border-radius: .3rem;
     margin-bottom: 2rem;
     transition: all .2s linear;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
 }
 
 #HIDDEV:hover {
-    background: #ffc30f;
-    box-shadow: 0px 0px 20px #ffbf00;
+    background: #62216cbf;
+    box-shadow: 0px 0px 20px #9831a8b9;
     border: 2px solid #fff;
+    color: #000000;
 }
 
 .submenubtn {
@@ -500,11 +505,11 @@ input:focus::placeholder {
     z-index: 100;
     position: fixed;
    top: 0%;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
   justify-content: center;
   align-items: center;
   display: none;
-    background-color: #2b2a2a4f;
+    background-color: #0303038b;
     border-radius:1rem ;
     -webkit-border-radius:1rem ;
     -moz-border-radius:1rem ;
@@ -563,6 +568,19 @@ input:focus::placeholder {
     width: auto;
 }
 
+}
+.description{
+    background-color: #1d1f22d3;
+
+    width: auto;
+    padding: 1%;
+    height: 100%;
+    border-radius: 1rem;
+margin-top: 2%;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 @keyframes jump {
 
