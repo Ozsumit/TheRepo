@@ -45,7 +45,11 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border-radius: 1rem;background-color: #2a2b2cb3;width: 60vw;height: 100%;backdrop-filter: blur(15px);
+    border-radius: 1rem;
+    background-color: #2a2b2cb3;
+    width: 60vw;
+    height: 100%;
+    backdrop-filter: blur(15px);
 }
 
 .nav {
@@ -478,71 +482,89 @@ input:focus::placeholder {
 .submenubtn {
 
     height: 2rem;
-    
+
 
     color: #131313;
     background: transparent;
     font-family: "Gemunu Libre", sans-serif;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     display: none;
     align-items: center;
     justify-content: center;
     border: none;
-    margin-bottom: 2rem;
+  
     transition: all .2s linear;
-    margin-bottom: .5rem;
+    margin-bottom: 0px;
+    user-select: none;
+  
+    color: #9831a8b9;
 
+}
+
+#menutxt {
+    cursor: pointer;
+    margin-top: 0;
+    margin-right: 0;
+    width: auto;
+    font-family: Gemunu Libre, sans-serif;
+    font-size: 1.1rem;
+display: block;
+    text-align: center;
+    pointer-events:all ;
+    user-select: none;
 }
 
 .submenubtn:hover {
 
     text-shadow: 0px 0px 20px #00f7d2a5;
- 
+
 }
-.popup{
-   
+
+.popup {
+
     height: 100vh;
     width: 100vw;
     z-index: 100;
     position: fixed;
-   top: 0%;
+    top: 0%;
     backdrop-filter: blur(5px);
-  justify-content: center;
-  align-items: center;
-  display: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
     background-color: #0303038b;
-    border-radius:1rem ;
-    -webkit-border-radius:1rem ;
-    -moz-border-radius:1rem ;
-    -ms-border-radius:1rem ;
-    -o-border-radius:1rem ;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
     transition: all .2s linear;
-    
+
 }
-.filter{
-  height: 15rem;
-  width: 25rem;
-  z-index: 100;
- display: flex;
- border: 2px solid rgb(113, 113, 113);
-  top: 10%;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(15px);
-  flex-direction: column;
-  background-color: #5757576c;
-  border-radius:1rem ;
-  -webkit-border-radius:1rem ;
-  -moz-border-radius:1rem ;
-  -ms-border-radius:1rem ;
-  -o-border-radius:1rem ;
 
-  
+.filter {
+    height: 15rem;
+    width: 25rem;
+    z-index: 100;
+    display: flex;
+    border: 2px solid rgb(113, 113, 113);
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    background-color: #5757576c;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 
 
-.closepopup{
- 
+
+
+    .closepopup {
+
         width: 4rem;
         height: 2rem;
         background: #ffbf00;
@@ -552,13 +574,13 @@ input:focus::placeholder {
         font-family: "Gemunu Libre", sans-serif;
         font-weight: bold;
         font-size: 1rem;
-      cursor: pointer;
+        cursor: pointer;
         border-radius: .4rem;
         margin-bottom: 2rem;
         transition: all .2s linear;
     }
-    
-  .closepopup:hover {
+
+    .closepopup:hover {
         background: #ffc30f;
         box-shadow: 0px 0px 20px #ffbf00;
         border: 2px solid #fff;
@@ -566,24 +588,43 @@ input:focus::placeholder {
 
 
 
-  h3{
-    width: auto;
-}
+    h3 {
+        width: auto;
+    }
 
 }
-.description{
+
+.description {
     background-color: #1d1f22d3;
 
     width: auto;
     padding: 1%;
     height: 100%;
     border-radius: 1rem;
-margin-top: 2%;
+    margin-top: 2%;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
 }
+
+#containermenu {
+    margin-bottom: 2rem;
+    cursor: pointer;
+    display: none;
+    flex-direction: row-reverse;
+    border: 2px solid #9831a8b9;
+    width: 6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
 @keyframes jump {
 
     10% {
@@ -650,7 +691,8 @@ margin-top: 2%;
 .content {
     flex-direction: column;
     display: flex;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .navigation {
@@ -695,6 +737,57 @@ margin-top: 2%;
         }
     }
 
+    .submenubtn {
+
+        height: 2rem;
+
+
+        color: #131313;
+        background: transparent;
+        font-family: "Gemunu Libre", sans-serif;
+        font-weight: bold;
+        font-size: 1.6rem;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        
+        transition: all .2s linear;
+        margin-bottom: 0rem;
+        user-select: none;
+        font-size: 1.6rem;
+        color: #9831a8b9;
+
+    }
+
+    #menutxt {
+        cursor: pointer;
+        margin-top: 0;
+        margin-right: 2.5em;
+        width: 1rem;
+        font-family: Gemunu Libre, sans-serif;
+        font-size: 1.2rem;
+justify-content: center;
+        text-align: center;
+    }
+
+    #containermenu {
+        margin-bottom: 2rem;
+        cursor: pointer;
+        display: none;
+        flex-direction: row-reverse;
+        border: 2px solid #9831a8b9;
+        width: 7rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+}
+
     body {
         background: url(blur.svg);
         background-attachment: fixed;
@@ -716,18 +809,23 @@ margin-top: 2%;
         border: 2px solid #ffbf00;
         border-bottom: 2rem solid #ffbf00;
     }
-#GuessingGame{
-    border-radius: 1rem;
-background-color: #2a2b2cb3;
-width: 90vw;
-height: 100%;
-backdrop-filter: blur(15px);}
-.description{
-    width: 80vw;
-    h3{
-        width: auto;
+
+    #GuessingGame {
+        border-radius: 1rem;
+        background-color: #2a2b2cb3;
+        width: 90vw;
+        height: 100%;
+        backdrop-filter: blur(15px);
     }
-}
+
+    .description {
+        width: 80vw;
+
+        h3 {
+            width: auto;
+        }
+    }
+
     .reposecDev,
     .reposec2 {
         padding: 3%;

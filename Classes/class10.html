@@ -42,10 +42,7 @@
     </div>
 
     <h3 id="topic" style="color: #ffbf00;font-size: 1.7rem;">Class-10</h3>
-<div id="containermenu"  onclick="showmenu()" style=" margin-bottom: 2rem; cursor: pointer;display: none;flex-direction: row-reverse;border: 2px solid #00f7d2;width: 10rem;justify-content: center;align-items: center;gap: 3.5rem; border-radius: 1rem;"><span class="submenubtn" id="smenubtn" style=" user-select: none; font-size: 1.6rem; color: #00f7d2;">⊨</span><label onclick="showmenu()" id="menutxt" for="submenubtn" style="cursor: pointer;margin-top: 0;margin-right: 0;width: auto; font-family: Gemunu Libre, sans-serif;
-font-size: 1.5rem;
-
-text-align: center;">Menu</label></div>
+<div id="containermenu"  onclick="showmenu()"><span class="submenubtn" id="smenubtn">▢</span><span id="menutxt" for="submenubtn">Menu</span></div>
 <div class="mainsystemsub" style="display: block;flex-direction: column;align-items: center;justify-content: center;">
     <div id="par" class="reposec" style="margin-bottom: 5rem;">
         <div class="items" id="###" href="#container"  onclick="show('contentNepali')"><a href="#container">Nepali</a></div>
@@ -347,17 +344,17 @@ function showmenu(){
     if ( document.getElementById("par").style.display === 'none') {
         document.getElementById("par").style.display = 'grid';
              document.getElementById("smenubtn").style.display='flex';
-            document.getElementById("smenubtn").innerHTML='⊭';
-            document.getElementById("smenubtn").style.width='2rem'; 
-            document.getElementById("smenubtn").style.fontSize='1.6rem';
+            document.getElementById("smenubtn").innerHTML='▣';
+            document.getElementById("smenubtn").style.width='1rem'; 
+            document.getElementById("smenubtn").style.fontSize='1.4rem';
             document.getElementById("menutxt").style.display='block';
         // document.getElementById("smenubtn").style.  border='2px solid #fff';
         } else {
             document.getElementById("par").style.display = 'none';
             document.getElementById("smenubtn").style.display='flex';
-            document.getElementById("smenubtn").innerHTML='⊨';
-            document.getElementById("smenubtn").style.width='2rem'; 
-            document.getElementById("smenubtn").style.fontSize='1.6rem'; 
+            document.getElementById("smenubtn").innerHTML='▢';
+            document.getElementById("smenubtn").style.width='1rem'; 
+            document.getElementById("smenubtn").style.fontSize='1.4rem'; 
         }
 
 }
