@@ -511,7 +511,7 @@ input:focus::placeholder {
     font-size: 1.1rem;
 display: block;
     text-align: center;
-    pointer-events:all ;
+  
     user-select: none;
 }
 
