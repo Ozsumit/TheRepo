@@ -45,10 +45,10 @@
 <div id="containermenu"  onclick="showmenu()"><span class="submenubtn" id="smenubtn">▢</span><span id="menutxt" for="submenubtn">Menu</span></div>
 <div class="mainsystemsub" style="display: block;flex-direction: column;align-items: center;justify-content: center;">
     <div id="par" class="reposec" style="margin-bottom: 5rem;">
-        <div class="items" id="###" href="#container"  onclick="show('contentNepali')"style="color: grey ;pointer-events:none;"><a  style="color: grey;" href="#container">Nepali</a></div>
-        <div class="items" id="###" href="#container" onclick="show('contentDbms')"style="color: grey;pointer-events:none;"><a  style="color: grey;" href="#container">Dbms</a></div>
+        <div class="items" id="###" href="#container" onclick="show('contentOS')"style="pointer-events:all;"><a  style="" href="#container">OS</a></div>
         <div class="items" id="###" href="#container" onclick="show('contentJava')" style="pointer-events: all"><a href="#container">Java</a></div>
         <div class="items" id="###" href="#container" onclick="show('contentWmad')"style="pointer-events: all;"><a  href="#container">Wmad</a></div>
+        <div class="items" id="###" href="#container"  onclick="show('contentNepali')"style="color: grey ;pointer-events:none;"><a  style="color: grey;" href="#container">Nepali</a></div>
 
 
         <!-- <div class="items" id="###&quot;"><a href="contact.html" target="_blank" onclick="displaypdf()">Test Object    </a></div> -->
@@ -171,7 +171,29 @@
                 </div>
         </div>
     </div>
-
+        
+    <div id="contentOS" class="content" style="display: none;"> <div class="reposec2" style="margin-bottom: 5rem; ">
+        <div class="items" id="###" href="#OSpaths" onclick="showOS('OSl1')"><a href="#Nepalipaths">Unit-1(Introduction to OOP)</a></div>
+        <div class="items" id="###" href="#OSpaths" onclick="showOS('OSl2')"style="pointer-events: all;"><a  href="#Nepalipaths">Unit-2( Process and Process Scheduling)</a></div>
+        <div class="items" id="###" href="#OSpaths" onclick="showOS('OSl3')"style="pointer-events:all;"><a "  href="#Nepalipaths">QnA( Deadlock management )</a></div>
+        <div class="items" id="###" href="#OSpaths" onclick="showOS('OSl4')"style="pointer-events: all;"><a  " href="#Nepalipaths">Unit-4 (Memory management and paging )</a></div>
+        <div class="items" id="###" href="#OSpaths" onclick="showOS('OSl5')" style="pointer-events: none;"><a  style="color: grey;" href="#Nepalipaths">Unit-5( Coming Soon )</a></div>
+         <div class="items" id="###" href="#OSpaths" onclick="showOS('OSl6')" style="pointer-events: none;"><a style="color: grey;"  href="#Nepalipaths">Unit-6( Coming Soon )</a></div>
+    
+    
+    </div>
+    <div id="OSpaths">
+        <div class="lessonsNep" style="display: flex; flex-direction: row;justify-content: center;align-items: center;">
+            <div id="OSl1" class="content" style="display: none;" > <iframe  onclick="requestFullscreen()"   id="ifr1" class="idontframepdf" src="https://drive.google.com/file/d/1SIh7Xo-JBR2g2UOT0wZxeCiq81EBzo8m/preview" frameborder="0"  allowfullscreen loading="lazy" width="640" height="480" allow="autoplay" ></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+            <div id="OSl2" class="content" style="display: none;"> <iframe  onclick="requestFullscreen()"   class="idontframepdf" src="https://drive.google.com/file/d/1y13v-Sao4keZk81RLwacq2ZV_ONu0-8X/preview" loading="lazy" width="650" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+            <div id="OSl3" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="https://drive.google.com/file/d/1NRlX_4upUlUKX1vnDtG8TCF4bqOl13Vc/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+            <div id="OSl4" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="https://drive.google.com/file/d/1LMVDAsCia6_HSpFhEWSdhrp7ZNfZJiDe/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+            <div id="OSl5" class="content" style="display: none;"><iframe  onclick="requestFullscreen()"  class="idontframepdf" src="https://drive.google.com/file/d/1NRlX_4upUlUKX1vnDtG8TCF4bqOl13Vc/preview" loading="lazy" width="640" height="480" allow="autoplay"></iframe><h3 style="font-size: 1.3rem; margin: 0;width: auto;">Click on yellow border to go fullscreen</h3></div>
+            
+            </div>
+    </div>
+    </div>
+    
 
 
 </div>  
@@ -276,7 +298,7 @@ if( document.getElementById("par").style.display==='grid'){
         if (contentDiv.style.display === 'none') {
             contentDiv.style.display = 'flex';
             document.getElementById("par").style.display='none';
-            document.getElementById("topic").innerHTML='Class-10/Nepali';
+            document.getElementById("topic").innerHTML='Class-11';
             document.getElementById("smenubtn").style.display='flex';
             document.getElementById("containermenu").style.display='flex';
             hideOtherDivs(divId);
@@ -365,6 +387,29 @@ if( document.getElementById("par").style.display==='grid'){
             }
         });
     }
+    function showOS(divId) {
+        const contentDiv = document.getElementById(divId);
+
+        if (contentDiv.style.display === 'none') {
+            contentDiv.style.display = 'flex';
+            hideOtherDivOS(divId);
+        } else {
+            contentDiv.style.display = 'none';
+        }
+
+    }
+
+    function hideOtherDivOS(currentDivId) {
+        const allDivs = document.querySelectorAll('[id^="OSl"]');
+        allDivs.forEach(div => {
+            if (div.id !== currentDivId) {
+                div.style.display = 'none';
+            }
+        });
+    }
+
+
+
 
     function requestFullScreen(id) {
     // Supports most browsers and their versions.
